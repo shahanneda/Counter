@@ -19,10 +19,12 @@
   
   <script>
     var today = new Date();
-    var date_to_reply = new Date('2018-4-28');
+    var date_to_reply = new Date('2018-4-29');
     var timeinmilisec = date_to_reply.getTime() - today.getTime();
-    console.log();
-    document.body.innerHTML +=   Math.ceil(timeinmilisec / (1000 * 60 * 60 * 24)) ;
+    var dayscince = Math.ceil(timeinmilisec / (1000 * 60 * 60 * 24);
+    if( myString.charAt( 0 ) === '0' )
+        dayscince = dayscince.slice( 1 );
+    document.body.innerHTML +=  dayscince  ;
   </script>
 
 </html>
